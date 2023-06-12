@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Strategy.P
 {
-    public class WorldCreator
+    class Program
     {
-        void CreateNewWorld()
+        static void Main(string[] args)
         {
-
+            Console.WriteLine(args.Length);
         }
     }
+    
 }

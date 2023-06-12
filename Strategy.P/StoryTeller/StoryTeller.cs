@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Strategy.P
+namespace Strategy.P.StoryTeller
 {
-    public class  StoryTeller : IStoryTeller
+    public class StoryTeller : IStoryTeller
     {
         public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Description { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -22,10 +22,11 @@ namespace Strategy.P
 
         public override string ToString()
         {
-            new StringBuilder().Append(Name)
-                .Append('\t')
-                .Append (Description)
-                .Append('\t')
+            return new StringBuilder()
+                .Append(Name)
+                .Append(Description)
+                .Append(StoryTellerType)
+                .ToString();
         }
     }
 }
