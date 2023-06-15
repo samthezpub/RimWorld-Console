@@ -10,7 +10,12 @@ namespace Strategy.P
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(args.Length);
+            MainMenuBuilder mainMenuBuilder = new MainMenuBuilder();
+            mainMenuBuilder.AddPoint("Играть", "P");
+            mainMenuBuilder.AddPoint("Играть", "P");
+            mainMenuBuilder.AddPoint("Играть", "P");
+            MainMenu mainMenu = mainMenuBuilder.Build();
+            mainMenu.GetListPoints();
         }
     }
     
